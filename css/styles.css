@@ -15,7 +15,6 @@ header {
     align-items: center;
     width: 100%;
     height: 150px;
-    margin-bottom: 0 auto;
     background-color: black;
     border-bottom: 0.5px solid white;
     font-family: 'Open sans', Helvetica, sans-serif;
@@ -122,7 +121,7 @@ header .menu2 a:hover {
 }
 
 @media screen and (max-width: 768px) {
-    .header {
+    header {
         display: flex;
     }
 
@@ -135,6 +134,7 @@ header .menu2 a:hover {
 
     .navbar {
         bottom: 25px;
+        margin-right: 0;
     }
 
     .menu {
@@ -234,10 +234,10 @@ header .menu2 a:hover {
     .toggle-button {
         display: block;
         font-size: 1.5rem;
-        color: #3D2D5C;
+        color: #000;
         cursor: pointer;
         margin-left: auto;
-        margin-right: 15px;
+        padding-right: 15px;
     }
 
     #toggle-menu:checked + .toggle-button + nav .menu {
@@ -324,6 +324,10 @@ h6 {
     list-style-type: none;
 }
 
+.content1-text {
+    padding-bottom: 23px;
+}
+
 .content2 {
     justify-content: center;
 }
@@ -362,7 +366,6 @@ h6 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
     height: auto;
     color: #000;
     background-color: #FBFDFC;
@@ -521,7 +524,7 @@ h6 {
 .content-accordion > input[name="collapse"]:checked ~ .content-text {
     color: #FBFDFC;
     width: auto;
-    height: 400px;
+    height: 450px;
     line-height: 1.5em;
     text-align: center;
     border-bottom: 1px solid #FE004C;
@@ -531,13 +534,7 @@ h6 {
 } 
 
 
-.content-image {
-    width: 100%;
-    height: 500px;
-    box-shadow: 2px 2px 2px #3D2D5C;
-}
-
-.content-image img {
+.content-main img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -631,7 +628,7 @@ h6 {
     cursor: pointer;
     text-align: center;
     padding: 15px;
-    height: 270px;
+    height: 300px;
     border-radius: 10px;
     background-color: #FEC40F;
     box-shadow: 1px 1px 1px #000;
@@ -682,16 +679,11 @@ h6 {
 } 
 
 
-.special1-image {
-    width: 100%;
-    height: 200px;
-    text-align: center;
-    box-shadow: 2px 2px 2px #3D2D5C;
-}
 
-.special1-image img {
+.special img {
     width: 100%;
-    height: 100%;
+    height: 230px;
+    box-shadow: 2px 2px 2px #3D2D5C;
     object-fit: cover;
 }
 
@@ -770,17 +762,12 @@ h6 {
     transition: height 0.5s;
 } 
 
-.exhibit-image {
+.exhibit img {
     width: 100%;
     height: 400px;
     box-shadow: 2px 2px 2px #3D2D5C;
 }
 
-.exhibit-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 /* main contact */
 
@@ -805,7 +792,8 @@ h6 {
     width: 60%;
     background-color: #000;
     padding: 20px;
-    border: 1px solid #FE004C;
+    border-top: 1px solid #FE004C;
+    border-bottom: 1px solid #FE004C;
 }
 
 .contact-top p {
@@ -913,16 +901,11 @@ h6 {
     color: #000;
 }
 
-.contact-image {
-    width: 100%;
-    height: 300px;
-    border-top: 1px solid #10BB7D;
-    border-bottom: 0.5px solid #10BB7D;
-}
-
-.contact-image img {
+.contact img {
     width: 100%;
     height: 100%;
+    border-top: 0.5px solid #00FCAE;
+    border-bottom: 0.5px solid #00FCAE;
     object-fit: cover;
 }
 
@@ -997,6 +980,7 @@ input[type='submit']:hover {
     background-color: #55F7FC;
     color: #064354;
 }
+
 
 /* main support */
 
@@ -1146,7 +1130,7 @@ input[type='submit']:hover {
     transition: height 0.5s;
 } 
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .content1-2 {
         display: flex;
         flex-direction: column;
@@ -1156,7 +1140,7 @@ input[type='submit']:hover {
         align-items: center;
         text-align: center;
         height: auto;
-        padding-left: 0;
+        padding: 0;
     }
 
     .content1 {
@@ -1166,7 +1150,7 @@ input[type='submit']:hover {
     }
 
     .content2 {
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
 
     .content2 li {
@@ -1190,31 +1174,32 @@ input[type='submit']:hover {
         margin-bottom: 2px;
     }
 
-    .text-left {
-        font-size: 0.7em;
-        line-height: 1.36em;
+    .text-left1 {
+        font-size: 0.9em;
+        line-height: 1.4em;
+        margin-right: 10px;
+    }
+
+    .text-left1:last-child {
+        margin-right: 0;
     }
 
     .text-right {
         font-size: 0.8em;
-    }
-
-    .text-left1 {
-        padding: 5px;
-        margin-right: 5px;
+        width: 90%;
     }
 
     .content-accordion {
         width: 90%;
     }
 
-    .content-image {
+    .content-main img {
         height: 300px;
     }
 
     .content-accordion label {
         padding: 10px;
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
 
     .content-accordion .content-main label .fa-solid.fa-rocket:before {
@@ -1222,8 +1207,8 @@ input[type='submit']:hover {
     }
 
     .content-accordion > input[name="collapse"]:checked ~ .content-text {
-        height: 270px;
-        font-size: 0.7em;
+        height: 300px;
+        font-size: 0.74em;
         line-height: 1.4em;
         padding: 10px;
     }
@@ -1283,8 +1268,8 @@ input[type='submit']:hover {
     }
 
     .accordion > input[name="collapse"]:checked ~ .tc-content {
-        font-size: 0.7em;
-        height: 200px;
+        font-size: 0.87em;
+        height: 290px;
     }
 
     .special-expandable .exhibit-events {
@@ -1293,19 +1278,19 @@ input[type='submit']:hover {
 
     .special-events {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-evenly;
     }
 
     .special-accordion {
         padding: 5px;
-        width: 90%;
+        width: 100%;
         justify-content: center;
     }
 
     .special-accordion label {
-        font-size: 0.5em;
-        height: 167px;
+        font-size: 0.8em;
+        height: auto;
         padding: 5px;
         border-radius: 3px;
     }
@@ -1327,14 +1312,14 @@ input[type='submit']:hover {
     }
 
     .special-accordion > input[name="collapse"]:checked ~ .special-text {
-        font-size: 0.56em;
+        font-size: 0.89em;
         line-height: 1.5em;
-        height: 150px;
+        height: 200px;
         background: #000;
     }
 
-    .special1-image {
-        height: 120px;
+    .special img {
+        height: 300px;
         width: 100%;
     }
 
@@ -1342,9 +1327,18 @@ input[type='submit']:hover {
         margin-bottom: 20px;
     }
 
+    .exhibit-accordion {
+        width: 80%;
+        height: auto;
+    }
+
+    .exhibit-accordion label {
+        font-size: 0.9em;
+    }
+
     .exhibit-accordion > input[name="collapse"]:checked ~ .exhibit-text {
-        font-size: 0.7em;
-        height: 220px;
+        font-size: 0.87em;
+        height: 250px;
         line-height: 1.5em;
         padding: 20px;
     } 
@@ -1370,10 +1364,10 @@ input[type='submit']:hover {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     h1 {
         font-size: 1.6em;
-        letter-spacing: -3px;
+        letter-spacing: -1px;
     }
 
     h2 {
@@ -1390,11 +1384,11 @@ input[type='submit']:hover {
     }
 
     h5 {
-        font-size: 0.6em;
+        font-size: 0.7em;
     }
 
     h6 {
-        font-size: 0.2em;
+        font-size: 0.7rem;
     }
 
     .content1-2 {
@@ -1406,20 +1400,18 @@ input[type='submit']:hover {
         align-items: center;
         text-align: center;
         height: auto;
-        padding-left: 0;
+        padding: 0;
+        padding-bottom: 10px;
     }
 
-    .content1 {
-        margin-right: 0;
-        font-size: 0.9em;
-        margin-bottom: 20px;
+    .content1 p {
+        font-size: 0.6rem;
     }
 
     .content2 li {
         justify-content: center;
         text-align: left;
-        padding-bottom: 10px;
-        font-size: 0.6em;
+        font-size: 0.7em;
     }
 
     .button2 {
@@ -1433,25 +1425,35 @@ input[type='submit']:hover {
     }
 
     .slider-container {
+        width: 90%;
         margin-bottom: 2px;
+    }
+    
+    .text-right {
+        font-size: 0.9em;
     }
 
     .text-left {
-        font-size: 0.29em;
-        line-height: 1.36em;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        text-align: center;
+        margin-bottom: 10px;
     }
 
     .text-left1 {
-        padding: 5px;
-        margin-right: 5px;
+        font-size: 0.5em;
+        line-height: 1.5em;
+        font-weight: 600;
+        padding: 1px;
     }
 
     .content-accordion {
-        width: 90%;
+        width: 100%;
     }
 
-    .content-image {
-        height: 150px;
+    .content-main img {
+        height: 250px;
     }
 
     .content-accordion label {
@@ -1459,12 +1461,12 @@ input[type='submit']:hover {
     }
 
     .content-accordion .content-main label .fa-solid.fa-rocket:before {
-        margin: 5px;
+        margin: 3px;
     }
 
     .content-accordion > input[name="collapse"]:checked ~ .content-text {
-        height: 150px;
-        font-size: 0.29em;
+        height: 340px;
+        font-size: 0.47em;
         line-height: 1.4em;
         padding: 10px;
     }
@@ -1476,12 +1478,17 @@ input[type='submit']:hover {
         letter-spacing: -2px;
     }
 
+    .contact-top {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
     .contact-top p {
-        font-size: 0.5em;
+        font-size: 0.7em;
     }
     
     .contact-top p:first-child {
-        font-size: 0.5em;
+        font-size: 0.8em;
         border-bottom: 1px solid #222729;
     }
     
@@ -1496,14 +1503,10 @@ input[type='submit']:hover {
         width: 80%;
     }
 
-    .contact-image {
-        height: 150px;
-    }
-
     .contact-accordion > input[name="collapse"]:checked ~ .contact-text {
-        height: 100px;
-        font-size: 0.5em;
-        line-height: 1em;
+        height: 150px;
+        font-size: 0.7em;
+        line-height: 1.3em;
     }
 
     .contact-accordion label:hover,
@@ -1517,7 +1520,7 @@ input[type='submit']:hover {
     }
 
     .contact-form label {
-        font-size: 0.4em;
+        font-size: 0.6em;
     }
 
     .form_input {
@@ -1531,25 +1534,25 @@ input[type='submit']:hover {
     }
 
     input[type='submit'] {
-        font-size: 0.4em;
+        font-size: 0.5em;
         padding: 2px 10px;
     }
 
 
     .accordion label {
-        font-size: 0.8em;
+        font-size: 1em;
         padding: 5px;
         border-bottom: 0.5px solid #FEC40F;
     }
 
     .accordion .handle label .fa-solid.fa-angle-up:before {
         margin-right: 10px;
-        font-size: 0.9em;
+        font-size: 1em;
     }
 
     .accordion > input[name="collapse"]:checked ~ .tc-content {
-        font-size: 0.4em;
-        height: 150px;
+        font-size: 0.6em;
+        height: 300px;
     }
 
     .special-expandable .exhibit-events {
@@ -1564,13 +1567,14 @@ input[type='submit']:hover {
 
     .special-accordion {
         padding: 10px;
-        width: 80%;
+        width: 100%;
         height: auto;
         justify-content: center;
     }
 
     .special-accordion label {
-        height: 120px;
+        height: 160px;
+        font-size: 0.7em;
         padding: 7px;
         border-radius: 3px;
     }
@@ -1582,7 +1586,7 @@ input[type='submit']:hover {
     }
 
     .special-accordion .special label .fa-solid.fa-angle-up:before {
-        margin: 5px;
+        margin: 3px;
     }
 
     .special-accordion > input[name="collapse"]:checked ~ .special label {
@@ -1591,19 +1595,25 @@ input[type='submit']:hover {
     }
 
     .special-accordion > input[name="collapse"]:checked ~ .special-text {
-        font-size: 0.4em;
-        height: 150px;
+        font-size: 0.6em;
+        height: 200px;
         background: #000;
     }
 
-    .special1-image {
-        height: 100px;
+    .special img {
+        height: 130px;
         width: 100%;
     }
 
+    .exhibit-accordion {
+        width: 80%;
+    }
+
     .exhibit-accordion label {
+        font-size: 0.9em;
         padding: 7px;
         border-radius: 3px;
+        height: 250px;
     }
 
     .exhibit-accordion .exhibit label .fa-solid.fa-vial:before {
@@ -1617,9 +1627,15 @@ input[type='submit']:hover {
     }
 
     .exhibit-accordion > input[name="collapse"]:checked ~ .exhibit-text {
-        height: 170px;
-        font-size: 0.4em;
+        height: 300px;
+        font-size: 0.6em;
         padding: 10px;
+    }
+
+    .exhibit img {
+        width: 100%;
+        height: 230px;
+        box-shadow: 2px 2px 2px #3D2D5C;
     }
 
     .support1 {
@@ -1634,12 +1650,19 @@ input[type='submit']:hover {
     .support1-text p,
     .support2-text p,
     .support3-text p {
-        font-size: 0.4em;
+        font-size: 0.5em;
     }
 
-    .support2,
+    .support2 {
+        height: auto;
+    }
+
     .support3 {
         height: 220px;
+    }
+
+    .support3-text {
+        padding-right: 10px;
     }
 
 
@@ -1724,12 +1747,14 @@ footer .footer-bottom a:hover {
 
     .footer-bottom {
         font-size: 0.8em;
+        margin-bottom: 20px;
     }
 
     .footer-left h6,
     .footer-middle h6,
     .footer-right h6 {
         font-size: 0.7rem;
+        margin-bottom: 10px;
     }
 }
 
@@ -1747,11 +1772,19 @@ footer .footer-bottom a:hover {
     .footer-left p,
     .footer-middle p,
     .footer-right p {
-        font-size: 0.3rem;
+        font-size: 0.4rem;
+    }
+
+    .footer-left h6,
+    .footer-middle h6,
+    .footer-right h6 {
+        font-size: 0.5rem;
+        margin-bottom: 10px;
     }
 
     .footer-bottom {
         font-size: 0.5em;
+        margin-bottom: 20px;
     }
 
 }

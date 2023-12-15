@@ -1,2 +1,1 @@
-# siljewcsm
-Repository for the Community Science Museum website
+The Community Science Museum website contains information about the museum, exhibitions, special events, admission and much more.

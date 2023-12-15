@@ -965,6 +965,7 @@ label {
 .form_input {
     width: 100%;
     box-sizing: border-box;
+    font-size: 1em;
     padding: 8px;
     margin-bottom: 10px;
 }
@@ -972,6 +973,8 @@ label {
 textarea {
     width: 100%;
     box-sizing: border-box;
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     padding: 8px;
     margin-bottom: 30px;
 }

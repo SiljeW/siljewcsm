@@ -92,10 +92,10 @@ header .menu2 a:hover {
 }
 
 .button2 {
-    background: rgb(92,73,129);
-    background: radial-gradient(circle, rgba(92,73,129,1) 0%, rgba(38,25,63,1) 100%);
+    background: #251B39;
     padding: 7px;
-    border-radius: 10px;
+    border-radius: 3px;
+    border-top: 0.1px solid #FBFDFC;
     box-shadow: 2px 2px 2px black;
 }
 
@@ -267,25 +267,22 @@ main {
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 3em;
     text-align: center;
     font-weight: bolder;
     color: #FBFDFC;
     margin-top: 20px;
-    letter-spacing: -5px;
 }
 
 h2 {
-    font-size: 3.5em;
+    font-size: 2.5em;
     text-align: center;
     font-weight: bolder;
     margin-top: 20px;
-    letter-spacing: -5px;
 }
 
 h3 {
-    font-size: 1.7em;
-    font-style: italic;
+    font-size: 1.8em;
 }
 
 h4 {
@@ -301,23 +298,25 @@ h6 {
     font-size: 1.2em;
 }
 
+legend {
+    display: none;
+}
 
 .content1-2 {
     display: flex;
     flex-direction: row;
-    flex: 200px;
-    justify-content: space-evenly;
-    align-items: top;
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(46,130,155,0.7343531162464986) 50%, rgba(0,0,0,1) 100%);
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 35%, rgba(46,131,155,0.3762701303680982) 100%);
     color: #FBFDFC;
-    width: 80%;
+    width: 100%;
     height: auto;
-    padding: 30px;
+    border-bottom: 3px solid #FBFDFC;
+    padding-bottom: 50px;
 }
 
 .content1 {
-    justify-content: center;
+    justify-content: left;
     margin-top: 0;
     list-style-type: none;
 }
@@ -327,7 +326,7 @@ h6 {
 }
 
 .content2 {
-    justify-content: center;
+    justify-content: right;
 }
 
 
@@ -365,6 +364,8 @@ h6 {
     flex-direction: column;
     align-items: center;
     height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
     color: #000;
     background-color: #FBFDFC;
 }
@@ -438,7 +439,7 @@ h6 {
     text-align: center;
     height: auto;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .content-expandable {
@@ -1161,8 +1162,8 @@ input[type='submit']:hover {
 
     .button2 {
         font-size: 1.01em;
+        border-radius: 2px;
         padding: 5px 10px;
-        border-radius: 7px;
     }
 
     .slide {
@@ -1416,7 +1417,7 @@ input[type='submit']:hover {
     .button2 {
         font-size: 0.5em;
         padding: 5px;
-        border-radius: 10px;
+        border-radius: 3px;
     }
 
     .slide {
@@ -1704,7 +1705,7 @@ footer {
 .footer-left p,
 .footer-middle p,
 .footer-right p {
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 .footer-bottom {
@@ -1715,7 +1716,7 @@ footer {
     align-items: center;
     width: 80%;
     color: #FBFDFC;
-    font-size: 1em;
+    font-size: 1.2em;
     margin-top: 30px;
     margin-bottom: 20px;
 }
@@ -1737,13 +1738,13 @@ footer .footer-bottom a:hover {
     .footer-left,
     .footer-middle,
     .footer-right {
-        line-height: 0.3em;
+        line-height: 0.5em;
     }
 
     .footer-left p,
     .footer-middle p,
     .footer-right p {
-        font-size: 0.6rem;
+        font-size: 0.699999rem;
     }
 
     .footer-bottom {
@@ -1754,7 +1755,8 @@ footer .footer-bottom a:hover {
     .footer-left h6,
     .footer-middle h6,
     .footer-right h6 {
-        font-size: 0.7rem;
+        font-size: 0.79rem;
+        padding-bottom: 5px;
         margin-bottom: 10px;
     }
 }
@@ -1762,29 +1764,30 @@ footer .footer-bottom a:hover {
 @media screen and (max-width: 480px) {
     .content-footer {
         flex: 50px;
+        margin-top: 20px;
     }
 
     .footer-left,
     .footer-middle,
     .footer-right {
-        line-height: 0.2em;
+        line-height: 0.3em;
     }
 
     .footer-left p,
     .footer-middle p,
     .footer-right p {
-        font-size: 0.4rem;
+        font-size: 0.48rem;
     }
 
     .footer-left h6,
     .footer-middle h6,
     .footer-right h6 {
-        font-size: 0.5rem;
+        font-size: 0.58rem;
         margin-bottom: 10px;
     }
 
     .footer-bottom {
-        font-size: 0.5em;
+        font-size: 0.58em;
         margin-bottom: 20px;
     }
 

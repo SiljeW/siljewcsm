@@ -11,7 +11,7 @@
         <header>
             <div class="header-image">
                 <a href="index.html">
-                    <img src="images/logo.jpg" alt="Community Science Museum logo" class="header-image"/>
+                    <img src="images/logo.jpg" alt="Community Science Museum logo and link to home page" class="header-image"/>
                 </a>
             </div>
             <div class="navbar">
@@ -35,7 +35,7 @@
         <main>
             <div class="image-top2">
                 <img src="images/getty-images-nPmye_doy8k-unsplash.jpg" alt="Astronaut with light"/>
-                <div class="top-text3">CONTACT</div>
+                <h1 class="top-text3">CONTACT</h1>
             </div>
             <div class="contact-top">
                 <p>Community Science Museum</p>
@@ -44,12 +44,13 @@
                 <p><i class="fa-solid fa-phone"></i>22334455</p>
             </div>
             <div class="contact-info">
-                <div class="contact-expandable">
+                <fieldset class="contact-expandable">
+                    <legend>Contact info and form</legend>
                     <section class="contact-accordion">
                         <input type="radio" name="collapse" id="contact1">
-                        <h4 class="contact">
+                        <h4 class="contact" alt="Opening hours">
                             <label for="contact1">
-                                <i class="fa-solid fa-angle-up" data-fa-transform="rotate-180"></i> OPENING HOURS
+                                <i class="fa-solid fa-angle-up" data-fa-transform="rotate-180" aria-hidden="true"></i> OPENING HOURS
                                 <img src="images/serge-kutuzov-oiWiPUBnkoA-unsplash.jpg" alt="Museum facade"/>
                             </label>
                         </h4>
@@ -71,15 +72,15 @@
                                 <input type="email" id="name" name="email" class="form_input" />
                                 <label for="message">Message</label>
                                 <textarea id="message" name="message" rows="10" cols="40"></textarea>
+                                <input type="submit" value="SEND">
                             </fieldset>
-                            <input type="submit" value="SEND">
                         </form>
                     </div>
                     <section class="contact-accordion">
                         <input type="radio" name="collapse" id="contact2">
-                        <h4 class="contact">
+                        <h4 class="contact" alt="Admission">
                             <label for="contact2">
-                                <i class="fa-solid fa-angle-up" data-fa-transform="rotate-180"></i> ADMISSION
+                                <i class="fa-solid fa-angle-up" data-fa-transform="rotate-180" aria-hidden="true"></i> ADMISSION
                                 <img src="images/maxim-hopman-IayKLkmz6g0-unsplash.jpg" alt="People watching surveillance screens"/>
                             </label>
                         </h4>
@@ -92,9 +93,9 @@
                     </section>
                     <section class="contact-accordion">
                         <input type="radio" name="collapse" id="contact3">
-                        <h4 class="contact">
+                        <h4 class="contact" alt="Accessibility">
                             <label for="contact3">
-                                <i class="fa-solid fa-angle-up" data-fa-transform="rotate-180"></i> ACCESSIBILITY
+                                <i class="fa-solid fa-angle-up" data-fa-transform="rotate-180" aria-hidden="true"></i> ACCESSIBILITY
                             </label>
                         </h4>
                         <div class="contact-text">
@@ -105,9 +106,9 @@
                     </section>
                     <section class="contact-accordion">
                         <input type="radio" name="collapse" id="contact4">
-                        <h4 class="contact">
+                        <h4 class="contact" alt="Food and drink">
                             <label for="contact4">
-                                <i class="fa-solid fa-angle-up" data-fa-transform="rotate-180"></i> FOOD & DRINK
+                                <i class="fa-solid fa-angle-up" data-fa-transform="rotate-180" aria-hidden="true"></i> FOOD & DRINK
                             </label>
                         </h4>
                         <div class="contact-text">
@@ -118,9 +119,9 @@
                     </section>
                     <section class="contact-accordion">
                         <input type="radio" name="collapse" id="contact5">
-                        <h4 class="contact">
+                        <h4 class="contact" alt="shop">
                             <label for="contact5">
-                                <i class="fa-solid fa-angle-up" data-fa-transform="rotate-180"></i> SHOP
+                                <i class="fa-solid fa-angle-up" data-fa-transform="rotate-180" aria-hidden="true"></i> SHOP
                             </label>
                         </h4>
                         <div class="contact-text">
@@ -130,7 +131,7 @@
                             </p>
                         </div>
                     </section>
-                </div>
+                </fieldset>
             </div>
         </main>
         <footer>
@@ -138,10 +139,10 @@
                 <div class="footer-left">
                     <h6>OPENING HOURS</h6>
                     <p>MON - CLOSED</p>
-                    <p>TUES-THURS - 10:00-16:00</p>
-                    <p>FRI - 10:00-19:00</p>
-                    <p>SAT - 09:00-16:00</p>
-                    <p>SUN - 09:00-13:00</p>
+                    <p>TUES-THURS - 10-16</p>
+                    <p>FRI - 10-19</p>
+                    <p>SAT - 9-16</p>
+                    <p>SUN - 9-13</p>
                 </div>
                 <div class="footer-middle">
                     <h6>FOLLOW US</h6>

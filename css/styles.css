@@ -94,7 +94,7 @@ header .menu2 a:hover {
 .button2 {
     background: #251B39;
     padding: 7px;
-    border-radius: 3px;
+    border-radius: 1px;
     border-top: 0.1px solid #FBFDFC;
     box-shadow: 2px 2px 2px black;
 }
@@ -159,8 +159,6 @@ header .menu2 a:hover {
         text-wrap: nowrap;
         margin-bottom: 15px;
     }
-
-    
 }
 
 @media only screen and (max-width: 480px) {
@@ -208,15 +206,20 @@ header .menu2 a:hover {
     }
 
     .menu2 {
-        flex-direction: column;
+        display: grid;
         height: 100px;
         align-items: flex-start;
         text-align: left;
     }
 
     .menu2 ul {
-        padding-top: 10px;
-        padding-left: 0;
+        padding-left: 5px;
+        align-content: start;
+    }
+
+    .menu2 li {
+        font-size: 0.8em;
+        padding-top: 5px;
     }
 
     .navbar {
@@ -306,8 +309,8 @@ legend {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
-    background: linear-gradient(0deg, rgba(0,0,0,1) 35%, rgba(46,131,155,0.3762701303680982) 100%);
+    align-items: first baseline;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 40%, rgba(22,63,75,1) 77%, rgba(46,131,155,0.6993391106442577) 100%);
     color: #FBFDFC;
     width: 100%;
     height: auto;
@@ -322,6 +325,12 @@ legend {
 }
 
 .content1-text {
+    font-size: 1.3em;
+    padding-bottom: 23px;
+}
+
+.content2-text {
+    font-size: 1.3em;
     padding-bottom: 23px;
 }
 
@@ -570,7 +579,7 @@ legend {
 }
 
 .top-text {
-    color: #FEC40F;
+    color: #FBFDFC;
     top: 180px;
     left: 25%;
     text-shadow: 7px 2px 2px black;
@@ -579,6 +588,7 @@ legend {
 .top-text2 {
     top: 240px;
     left: 50%;
+    color: #FEC40F;
     text-shadow: 7px 2px 2px black;
 }
 
@@ -678,8 +688,6 @@ legend {
     transition: height 0.5s;
 } 
 
-
-
 .special img {
     width: 100%;
     height: 230px;
@@ -695,7 +703,7 @@ legend {
 }
 
 .exhibit-accordion {
-    width: 70%;
+    width: 50%;
     height: auto;
 }
 
@@ -764,7 +772,7 @@ legend {
 
 .exhibit img {
     width: 100%;
-    height: 400px;
+    height: auto;
     box-shadow: 2px 2px 2px #3D2D5C;
 }
 
@@ -1134,30 +1142,39 @@ input[type='submit']:hover {
     .content1-2 {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        flex: 0;
         justify-content: center;
         align-items: center;
         text-align: center;
         height: auto;
-        padding: 0;
     }
 
     .content1 {
-        margin-right: 0;
-        font-size: 1.1em;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
+    }
+
+    .content1-text {
+        font-weight: 600;
+        font-size: 1.05em;
     }
 
     .content2 {
-        margin-bottom: 30px;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+
+    .content2-text {
+        font-size: 1.05em;
+        font-weight: 600;
     }
 
     .content2 li {
         justify-content: center;
         text-align: left;
         padding-bottom: 10px;
-        font-size: 1.05em;
+    }
+
+    .content2 li:last-child {
+        padding-bottom: 0;
     }
 
     .button2 {
@@ -1279,19 +1296,20 @@ input[type='submit']:hover {
     .special-events {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        align-items: center;
     }
 
     .special-accordion {
         padding: 5px;
-        width: 100%;
+        width: 60%;
+        height: auto;
         justify-content: center;
     }
 
     .special-accordion label {
         font-size: 0.8em;
         height: auto;
-        padding: 5px;
+        padding: 15px;
         border-radius: 3px;
     }
 
@@ -1314,7 +1332,7 @@ input[type='submit']:hover {
     .special-accordion > input[name="collapse"]:checked ~ .special-text {
         font-size: 0.89em;
         line-height: 1.5em;
-        height: 200px;
+        height: 250px;
         background: #000;
     }
 
@@ -1328,12 +1346,16 @@ input[type='submit']:hover {
     }
 
     .exhibit-accordion {
-        width: 80%;
+        width: 70%;
         height: auto;
     }
 
     .exhibit-accordion label {
         font-size: 0.9em;
+    }
+
+    .exhibit img {
+        height: auto;
     }
 
     .exhibit-accordion > input[name="collapse"]:checked ~ .exhibit-text {
@@ -1394,24 +1416,43 @@ input[type='submit']:hover {
     .content1-2 {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        flex: 0;
         justify-content: center;
         align-items: center;
         text-align: center;
         height: auto;
-        padding: 0;
         padding-bottom: 10px;
     }
 
-    .content1 p {
-        font-size: 0.6rem;
+    .content1-text p {
+        font-size: 0.7rem;
+    }
+
+    .content1-text {
+        padding-bottom: 5px;
+    }
+
+    .content1 {
+        padding-bottom: 10px;
+    }
+
+    .content2-text ul {
+        padding-bottom: 5px;
+        font-size: 0.6em;
+    }
+
+    .content2-text {
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
 
     .content2 li {
         justify-content: center;
         text-align: left;
-        font-size: 0.7em;
+        
+    }
+
+    .content2 li:last-child{
+        padding-bottom: 0;
     }
 
     .button2 {
@@ -1567,7 +1608,7 @@ input[type='submit']:hover {
 
     .special-accordion {
         padding: 10px;
-        width: 100%;
+        width: 70%;
         height: auto;
         justify-content: center;
     }
@@ -1606,14 +1647,15 @@ input[type='submit']:hover {
     }
 
     .exhibit-accordion {
-        width: 80%;
+        width: 50%;
+        height: 200px;
     }
 
     .exhibit-accordion label {
         font-size: 0.9em;
         padding: 7px;
         border-radius: 3px;
-        height: 250px;
+        height: auto;
     }
 
     .exhibit-accordion .exhibit label .fa-solid.fa-vial:before {
@@ -1634,7 +1676,8 @@ input[type='submit']:hover {
 
     .exhibit img {
         width: 100%;
-        height: 230px;
+        height: auto;
+        object-fit: cover;
         box-shadow: 2px 2px 2px #3D2D5C;
     }
 
@@ -1703,9 +1746,15 @@ footer {
 }
 
 .footer-left p,
-.footer-middle p,
 .footer-right p {
     font-size: 1em;
+}
+
+.footer-middle .icons {
+    display: block;
+    justify-content: space-evenly;
+    font-size: 2em;
+    text-align: center;
 }
 
 .footer-bottom {
@@ -1736,15 +1785,18 @@ footer .footer-bottom a:hover {
     }
 
     .footer-left,
-    .footer-middle,
     .footer-right {
         line-height: 0.5em;
     }
 
     .footer-left p,
-    .footer-middle p,
     .footer-right p {
         font-size: 0.699999rem;
+    }
+
+    .footer-middle .icons {
+        font-size: 1em;
+        text-align: center;
     }
 
     .footer-bottom {
@@ -1774,9 +1826,13 @@ footer .footer-bottom a:hover {
     }
 
     .footer-left p,
-    .footer-middle p,
     .footer-right p {
         font-size: 0.48rem;
+    }
+
+    .footer-middle .icons {
+        font-size: 0.9em;
+        text-align: center;
     }
 
     .footer-left h6,

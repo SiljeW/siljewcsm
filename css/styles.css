@@ -218,7 +218,6 @@ header .menu2 a:hover {
     }
 
     .menu2 li {
-        font-size: 0.8em;
         padding-top: 5px;
     }
 
@@ -1648,7 +1647,7 @@ input[type='submit']:hover {
 
     .exhibit-accordion {
         width: 50%;
-        height: 200px;
+        height: auto;
     }
 
     .exhibit-accordion label {
@@ -1687,13 +1686,13 @@ input[type='submit']:hover {
     }
 
     .support1 h6 {
-        font-size: 0.6em;
+        font-size: 0.8em;
     }
 
     .support1-text p,
     .support2-text p,
     .support3-text p {
-        font-size: 0.5em;
+        font-size: 0.7em;
     }
 
     .support2 {
@@ -1701,7 +1700,7 @@ input[type='submit']:hover {
     }
 
     .support3 {
-        height: 220px;
+        height: auto;
     }
 
     .support3-text {

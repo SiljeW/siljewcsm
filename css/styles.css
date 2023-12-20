@@ -1046,7 +1046,7 @@ input[type='submit']:hover {
     flex-direction: row;
     width: 90%;
     height: 500px;
-    padding-left: 10px;
+    padding-left: 30px;
     margin-bottom: 50px;
     border-radius: 10px;
     border-left: 0.2px solid #FE004C;
@@ -1068,7 +1068,7 @@ input[type='submit']:hover {
     color: #FBFDFC;
     font-weight: bold;
     font-style: italic;
-    background-color: #000;
+    background-color: #222729;
     padding: 5px;
     margin-left: 25%;
     text-shadow: 1px 1px 1px #FE004C;
@@ -1106,7 +1106,7 @@ input[type='submit']:hover {
     flex-direction: row;
     width: 90%;
     height: 500px;
-    padding-right: 10px;
+    padding-right: 30px;
     margin-bottom: 50px;
     border-radius: 10px;
     border-left: 0.2px solid #FE004C;
@@ -1124,7 +1124,7 @@ input[type='submit']:hover {
 
 .support3-text {
     width: 50%;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .support3-text p {
@@ -1136,7 +1136,7 @@ input[type='submit']:hover {
     color: #FBFDFC;
     font-weight: bold;
     font-style: italic;
-    background-color: #000;
+    background-color: #222729;
     padding: 5px;
     margin-left: 10%;
     text-shadow: 1px 1px 1px #FE004C;
@@ -1820,7 +1820,7 @@ input[type='submit']:hover {
     .support2-text p,
     .support3-text p {
         font-size: 0.7em;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     .support2 a.button,

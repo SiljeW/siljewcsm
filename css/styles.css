@@ -509,7 +509,7 @@ legend {
     border-radius: 10px;
 }
 
-.content-accordion .content-main label .fa-solid.fa-rocket:before {
+.content-accordion .content-main label .fa-solid.fa-dna:before {
     display: inline-block;
     margin: 10px;
     font-size: 1em;
@@ -517,7 +517,7 @@ legend {
     transition: 0.4s;
 }
 
-.content-accordion > input[name="collapse"]:checked ~ .content-main label .fa-solid.fa-rocket:before {
+.content-accordion > input[name="collapse"]:checked ~ .content-main label .fa-solid.fa-dna:before {
     transform: rotate(180deg);
     transform-origin: center;
     transition: 0.4s;
@@ -1239,9 +1239,10 @@ input[type='submit']:hover {
     .content1-text {
         font-weight: 600;
         font-size: 1.05em;
+        padding-bottom: 15px;
     }
 
-    .content1-text h3 {
+    .content1-text h2 {
         font-size: 1.5em;
         text-shadow: 1px 1px 1px #000;
     }
@@ -1254,17 +1255,18 @@ input[type='submit']:hover {
     .content2-text {
         font-size: 1.05em;
         font-weight: 600;
+        padding-bottom: 20px;
     }
 
-    .content2-text h3 {
+    .content2-text h2 {
         font-size: 1.5em;
         text-shadow: 1px 1px 1px #000;
     }
 
-    .content2 li {
+    .content2-text li {
         justify-content: center;
         text-align: left;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
     }
 
     .content2 li:last-child {
@@ -1310,10 +1312,10 @@ input[type='submit']:hover {
 
     .content-accordion label {
         padding: 10px;
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 
-    .content-accordion .content-main label .fa-solid.fa-rocket:before {
+    .content-accordion .content-main label .fa-solid.fa-dna:before {
         margin: 5px;
     }
 
@@ -1501,7 +1503,7 @@ input[type='submit']:hover {
     }
 
     .content1-text {
-        padding-bottom: 5px;
+        padding-bottom: 10px;
     }
 
     .content1 {
@@ -1518,9 +1520,9 @@ input[type='submit']:hover {
         padding-bottom: 0;
     }
 
-    .content2 li {
+    .content2-text li {
         justify-content: center;
-        padding-bottom: 10px;
+        padding-bottom: 15px;
         text-align: left;
         
     }
@@ -1572,10 +1574,11 @@ input[type='submit']:hover {
     }
 
     .content-accordion label {
+        font-size: 1em;
         padding: 10px;
     }
 
-    .content-accordion .content-main label .fa-solid.fa-rocket:before {
+    .content-accordion .content-main label .fa-solid.fa-dna:before {
         margin: 3px;
     }
 

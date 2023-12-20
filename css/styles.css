@@ -275,38 +275,6 @@ main {
     display: block;
 }
 
-h1 {
-    font-size: 3em;
-    text-align: center;
-    font-weight: bolder;
-    color: #FBFDFC;
-    margin-top: 20px;
-}
-
-h2 {
-    font-size: 2.5em;
-    text-align: center;
-    font-weight: bolder;
-    margin-top: 20px;
-}
-
-h3 {
-    font-size: 1.8em;
-}
-
-h4 {
-    font-size: 1.6em;
-    font-style: italic;
-}
-
-h5 {
-    font-size: 1.5em;
-}
-
-h6 {
-    font-size: 1.2em;
-}
-
 legend {
     display: none;
 }
@@ -419,7 +387,7 @@ legend {
     height: auto;
 }
 
-.text-right {
+.text-right h3 {
     text-align: center;
     width: 100%;
     text-transform: uppercase;
@@ -473,6 +441,7 @@ legend {
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,0.4094231442577031) 0%, rgba(61,45,92,1) 50%, rgba(0,0,0,0.3702074579831933) 100%);
     width: 100%;
+    font-size: 2em;
     text-align: center;
     height: auto;
     margin-top: 10px;
@@ -561,7 +530,7 @@ legend {
 .content-accordion > input[name="collapse"]:checked ~ .content-text {
     color: #FBFDFC;
     width: auto;
-    height: 450px;
+    height: 500px;
     line-height: 1.5em;
     text-align: center;
     border-bottom: 1px solid #FE004C;
@@ -598,26 +567,39 @@ legend {
 
 .top-text,
 .top-text2 {
-    font-size: 4em;
+    font-size: 2em;
     text-align: center;
     font-weight: 600;
     font-style: italic;
-    letter-spacing: -5px;
-    margin-top: 10px;
+    letter-spacing: -3px;
 }
 
-.top-text {
+.top-text h1 {
+    font-size: 2em;
     color: #FBFDFC;
-    top: 180px;
-    left: 25%;
-    text-shadow: 7px 2px 2px black;
+    text-align: center;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: -3px;
+    text-shadow: 2px 2px 2px #FE004C;
+}
+
+.top-text h2 {
+    font-size: 2em;
+    color: #FEC40F;
+    text-align: center;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: -3px;
+    margin-top: 0;
+    text-shadow: 2px 2px 2px #FE004C;
 }
 
 .top-text2 {
-    top: 240px;
-    left: 50%;
+    font-size: 2em;
     color: #FEC40F;
-    text-shadow: 7px 2px 2px black;
+    margin-top: 0;
+    text-shadow: 2px 2px 2px #FE004C;
 }
 
 .special-top {
@@ -749,6 +731,7 @@ legend {
     color: #000;
     cursor: pointer;
     text-align: center;
+    font-size: 1.3em;
     padding: 15px;
     border-radius: 10px;
     background-color: #FBFDFC;
@@ -830,6 +813,10 @@ legend {
     padding: 20px;
     border-top: 1px solid #FE004C;
     border-bottom: 1px solid #FE004C;
+}
+
+.contact-top h2 {
+    font-size: 1.3em;
 }
 
 .contact-top p {
@@ -1040,9 +1027,15 @@ input[type='submit']:hover {
     margin-bottom: 40px;
 }
 
-.support1-text h4 {
+.support1-text h2 {
+    font-size: 1.5em;
+    font-style: italic;
     text-shadow: 1px 1px 1px #FE004C;
     text-decoration: underline 1px solid #00FCAE;
+}
+
+.support1-text h3 {
+    font-size: 1em;
 }
 
 .support2 {
@@ -1084,6 +1077,8 @@ input[type='submit']:hover {
 }
 
 .support2-text h4 {
+    font-size: 1.5em;
+    font-style: italic;
     margin-left: 10px;
     text-shadow: 1px 1px 1px #FE004C;
     text-decoration: underline 1px solid #00FCAE;
@@ -1117,6 +1112,8 @@ input[type='submit']:hover {
 }
 
 .support3-text h4 {
+    font-size: 1.5em;
+    font-style: italic;
     margin-left: 10px;
     text-shadow: 1px 1px 1px #FE004C;
     text-decoration: underline 1px solid #00FCAE;
@@ -1175,7 +1172,6 @@ input[type='submit']:hover {
     font-style: italic;
 }
 
-
 .accordion > input[name="collapse"] {
     display: none;
 }
@@ -1223,6 +1219,7 @@ input[type='submit']:hover {
 } 
 
 @media only screen and (max-width: 768px) {
+
     .content1-2 {
         display: flex;
         flex-direction: column;
@@ -1241,6 +1238,11 @@ input[type='submit']:hover {
         font-size: 1.05em;
     }
 
+    .content1-text h3 {
+        font-size: 1.5em;
+        text-shadow: 1px 1px 1px #000;
+    }
+
     .content2 {
         padding-bottom: 10px;
         margin-bottom: 20px;
@@ -1249,6 +1251,11 @@ input[type='submit']:hover {
     .content2-text {
         font-size: 1.05em;
         font-weight: 600;
+    }
+
+    .content2-text h3 {
+        font-size: 1.5em;
+        text-shadow: 1px 1px 1px #000;
     }
 
     .content2 li {
@@ -1300,7 +1307,7 @@ input[type='submit']:hover {
 
     .content-accordion label {
         padding: 10px;
-        font-size: 0.9em;
+        font-size: 1.3em;
     }
 
     .content-accordion .content-main label .fa-solid.fa-rocket:before {
@@ -1317,10 +1324,15 @@ input[type='submit']:hover {
     .top-text,
     .top-text2,
     .top-text3 {
-        font-size: 3.4em;
-        letter-spacing: -2px;
-        margin-bottom: 10px;
-        margin-top: 10px;
+        font-size: 1.6em;
+    }
+
+    .separator {
+        font-size: 1.3em;
+    }
+
+    .contact-top h2 {
+        font-size: 1.1em;
     }
 
     .contact-top p {
@@ -1471,32 +1483,6 @@ input[type='submit']:hover {
 }
 
 @media only screen and (max-width: 480px) {
-    h1 {
-        font-size: 2.1em;
-        letter-spacing: -1px;
-    }
-
-    h2 {
-        font-size: 1.8em;
-        letter-spacing: -3px;
-    }
-
-    h3 {
-        font-size: 1.5em;
-    }
-
-    h4 {
-        font-size: 1em;
-    }
-
-    h5 {
-        font-size: 0.9em;
-    }
-
-    h6 {
-        font-size: 0.8rem;
-    }
-
     .content1-2 {
         display: flex;
         flex-direction: column;
@@ -1600,7 +1586,7 @@ input[type='submit']:hover {
     .top-text,
     .top-text2,
     .top-text3 {
-        font-size: 2.5em;
+        font-size: 1.1em;
         letter-spacing: -2px;
     }
 
@@ -1608,6 +1594,10 @@ input[type='submit']:hover {
         width: 80%;
         margin-bottom: 10px;
         align-items: flex-start;
+    }
+
+    .contact-top h2 {
+        font-size: 1em;
     }
 
     .contact-top p {
@@ -1704,6 +1694,7 @@ input[type='submit']:hover {
         height: 160px;
         font-size: 0.7em;
         padding: 7px;
+        padding-bottom: 15px;
         border-radius: 3px;
     }
 
@@ -1778,8 +1769,12 @@ input[type='submit']:hover {
         padding-right: 30px;
     }
 
-    .support1 h6 {
-        font-size: 0.8em;
+    .support1-text h3 {
+        font-size: 0.7em;
+    }
+
+    .support1-text p {
+        font-size: 0.7em;
     }
 
     .support2 {
@@ -1854,7 +1849,6 @@ footer {
     background-color: #000;
     flex-direction: column;
     align-items: center;
-
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -1878,6 +1872,12 @@ footer {
     text-align: center;
     padding: 0;
     line-height: 0.5em;
+}
+
+.footer-left h5,
+.footer-middle h5,
+.footer-right h5 {
+    font-size: 1.2em;
 }
 
 .footer-left p,
@@ -1939,9 +1939,9 @@ footer .footer-bottom a:hover {
         margin-bottom: 20px;
     }
 
-    .footer-left h6,
-    .footer-middle h6,
-    .footer-right h6 {
+    .footer-left h5,
+    .footer-middle h5,
+    .footer-right h5 {
         font-size: 0.79rem;
         padding-bottom: 5px;
         margin-bottom: 10px;
@@ -1970,9 +1970,9 @@ footer .footer-bottom a:hover {
         text-align: center;
     }
 
-    .footer-left h6,
-    .footer-middle h6,
-    .footer-right h6 {
+    .footer-left h5,
+    .footer-middle h5,
+    .footer-right h5 {
         font-size: 0.58rem;
         margin-bottom: 10px;
     }

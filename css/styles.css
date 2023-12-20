@@ -150,16 +150,18 @@ header .menu2 a:hover {
     .menu li {
         flex-direction: row;
         box-sizing: border-box;
-        padding-right: 10px;
+        padding-right: 15px;
         padding-top: 10px;
     }
 
     .menu2 {
         display: flex;
+        padding-right: 20px;
+        padding-bottom: 10px;
     }
 
     .menu2 li {
-        padding-right: 10px;
+        padding-right: 15px;
         text-wrap: nowrap;
         margin-bottom: 15px;
     }
@@ -321,17 +323,18 @@ legend {
 }
 
 .content1-text {
-    font-size: 1.3em;
-    padding-bottom: 23px;
+    font-size: 1.2em;
+    padding-bottom: 10px;
 }
 
 .content2-text {
-    font-size: 1.3em;
-    padding-bottom: 23px;
+    font-size: 1.2em;
+    padding-bottom: 2px;
 }
 
 .content2 {
     justify-content: right;
+    height: auto;
 }
 
 
@@ -1658,7 +1661,7 @@ input[type='submit']:hover {
 
 
     .accordion label {
-        font-size: 1em;
+        font-size: 0.5em;
         padding: 5px;
         border-bottom: 0.5px solid #FEC40F;
     }

@@ -324,12 +324,18 @@ legend {
 
 .content1-text {
     font-size: 1.2em;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
+}
+
+.content1-text h2,
+.content2-text h2 {
+    font-size: 1.6em;
+    text-shadow: 1px 1px 1px #000;
 }
 
 .content2-text {
     font-size: 1.2em;
-    padding-bottom: 2px;
+    padding-bottom: 23px;
 }
 
 .content2 {
@@ -393,6 +399,7 @@ legend {
 .text-right h3 {
     text-align: center;
     width: 100%;
+    font-size: 1.6em;
     text-transform: uppercase;
     padding: 10px;
     color: #000;
@@ -493,8 +500,7 @@ legend {
     text-align: center;
     padding: 15px;
     border-radius: 5px;
-    border-top: 0.1px solid #FE004C;
-    border-left: 0.1px solid #FE004C;
+    border: 0.1px solid #FE004C;
     background-color: #000;
     box-shadow: 1px 1px 1px #000;
 }
@@ -502,8 +508,6 @@ legend {
 .content-accordion label:hover,
 .content-accordion label:focus {
     color: #FBFDFC;
-    border: 0.1px solid #FE004C;
-    border-left: 0.1px solid #FE004C;
     background-color: #000;
     box-shadow: 15px 15px 1px #222729;
     border-radius: 10px;
@@ -1546,8 +1550,8 @@ input[type='submit']:hover {
         margin-bottom: 2px;
     }
     
-    .text-right {
-        font-size: 0.9em;
+    .text-right h3 {
+        font-size: 1em;
     }
 
     .text-left {
@@ -1896,6 +1900,7 @@ footer {
     justify-content: space-evenly;
     font-size: 2em;
     text-align: center;
+    cursor: pointer;
 }
 
 .footer-bottom {

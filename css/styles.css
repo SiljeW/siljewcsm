@@ -1,10 +1,11 @@
 
 body {
-    background-color: white;
-    max-width: 100%;
+    background-color: #000;
+    max-width: 100vw;
     overflow-x: hidden;
     display: flex;
     margin: 0;
+    padding: 0;
     flex-direction: column;
 }
 
@@ -13,6 +14,7 @@ header {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    align-items: center;
     height: 150px;
     padding-top: 15px;
     background-color: black;
@@ -82,7 +84,6 @@ header {
     text-decoration: none;
     font-weight: bold;
 }
-
 
 
 header .menu a:hover,
@@ -268,14 +269,13 @@ main {
 }
 
 .image-top {
-    max-width: 100%;
+    max-width: 1500px;
     height: auto;
 }
 
 .image-top img {
     width: 100%;
     height: auto;
-    display: block;
 }
 
 legend {
@@ -313,6 +313,7 @@ legend {
     color: #FBFDFC;
     width: 100%;
     height: auto;
+    max-width: 1300px;
     border-bottom: 3px solid #FBFDFC;
     padding-bottom: 50px;
 }
@@ -366,6 +367,7 @@ legend {
     display: flex;
     flex-direction: column;
     width: 100%;
+    max-width: 1300px;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -452,6 +454,7 @@ legend {
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,0.4094231442577031) 0%, rgba(61,45,92,1) 50%, rgba(0,0,0,0.3702074579831933) 100%);
     width: 100%;
+    max-width: 1200px;
     font-size: 2em;
     text-align: center;
     height: auto;
@@ -613,6 +616,7 @@ legend {
 .special-top {
     font-style: italic;
     color: #FBFDFC;
+    max-width: 1200px;
     width: 100%;
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(61,45,92,1) 100%);
@@ -624,6 +628,7 @@ legend {
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    max-width: 1200px;
 }
 
 .special-events {
@@ -803,7 +808,7 @@ legend {
     top: 22px;
     width: 100%;
     text-align: center;
-    text-shadow: 7px 2px 2px black;
+    text-shadow: 2px 2px 2px #FE004C;
     font-size: 4em;
     font-weight: 600;
     font-style: italic;
@@ -1021,6 +1026,7 @@ input[type='submit']:hover {
     align-items: center;
     background: #FBFDFC;
     width: 100%;
+    max-width: 1200px;
     padding-bottom: 20px;
 }
 
@@ -1171,6 +1177,7 @@ input[type='submit']:hover {
     display: flex;
     flex-direction: column;
     width: 80%;
+    margin-bottom: 40px;
     text-align: center;
     color: #FBFDFC;
 }
